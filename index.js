@@ -4,18 +4,57 @@ console.log(greeting)
 const fs = require('fs');
 const inquirer = require('inquirer');
 
+
+//prompt user for information to generate readme file
 inquirer
   .prompt([
       {
-          type: "input",
-          message: "Title of Project:",
-          name: "title"
+        name: "title",
+        type: "input",
+        message: "What is the title of your project?",
       },
       {
+        name: "description",
         type: "input",
-        message: "Please provide a description of your project.",
-        name: "title"
-      }
+        message: "Please provide a description of the project:",
+      },
+      {
+        name: "installation",
+        type: "input",
+        message: "Please provide installation instructions:",
+      },
+      {
+        name: "usage",
+        type: "input",
+        message: "Please provide instructions (and examples) of project's use:",
+      },
+      {
+        name: "contributing",
+        type: "input",
+        message: "Please list any contributors to your project:",
+      },
+      {
+        name: "license",
+        type: "list",
+        message: "Protect your project! Choose the type of License you would like to include:",
+        choices: ["Apache License 2.0", "Mozilla Public License 2.0", "MIT", "ISC License", "GNU GPLv2"]
+      },
+      {
+        name: "tests",
+        type: "input",
+        message: "Please provide tests for your project and examples of how to run them:",
+      },
+      {
+        name: "username",
+        type: "input",
+        message: "Please provide your Guthub username:",
+      },
+      {
+        name: "email",
+        type: "input",
+        message: "Please provide your email address:",
+      },
+      
     /* Pass your questions in here */
   ])
   .then(answers => {
