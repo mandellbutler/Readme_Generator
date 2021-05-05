@@ -58,6 +58,10 @@ inquirer
     /* Pass your questions in here */
   ])
   .then(answers => {
+      fs.writeFile("answers.txt", JSON.stringify(answers), "utf8", (err) => {
+          if (err) console.log(err);
+            console.log("Success!")
+      })
     // Use user feedback for... whatever!!
   })
   .catch(error => {
