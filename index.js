@@ -130,7 +130,7 @@ const renderReadme = ({
     Email: ${email}
 
     `;
-    fs.writeFile("READ.me", templateReadMe, "utf8", (err) => 
+    fs.writeFile("README.md", templateReadMe, "utf8", (err) => 
         err ? console.log(err) : console.log("And then, God created a READ.me!")
     );
 };
