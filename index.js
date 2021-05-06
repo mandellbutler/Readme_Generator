@@ -1,14 +1,13 @@
-const greeting = "Hello World!";
-console.log(greeting)
 //Dependencies==============================
-const fs = require('fs');
+
+//Collects user inputs
 const inquirer = require('inquirer');
+//Writes inputs to file
+const fs = require('fs');
 
-
-//prompt user for information to generate readme file
-inquirer
-  .prompt([
-      {
+//=======================DATA
+const questions = [
+    {
         name: "title",
         type: "input",
         message: "What is the title of your project?",
@@ -54,23 +53,28 @@ inquirer
         type: "input",
         message: "Please provide your email address:",
       },
-      
-    /* Pass your questions in here */
-  ])
-  .then(answers => {
-      fs.writeFile("answers.txt", JSON.stringify(answers), "utf8", (err) => {
-          if (err) console.log(err);
-            console.log("Success!")
-      })
-    // Use user feedback for... whatever!!
-  })
-  .catch(error => {
-    if(error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
-    } else {
-      // Something else went wrong
-    }
-  });
+];
+
+
+//prompt user for information to generate readme file
+
+//===============
+// inquirer
+//   .prompt(questions)
+//   .then(answers => {
+//       fs.writeFile("answers.txt", JSON.stringify(answers), "utf8", (err) => {
+//           if (err) console.log(err);
+//             console.log("Success!")
+//       })
+//     // Use user feedback for... whatever!!
+//   })
+//   .catch(error => {
+//     if(error.isTtyError) {
+//       // Prompt couldn't be rendered in the current environment
+//     } else {
+//       // Something else went wrong
+//     }
+// });
 
 
 // GIVEN a command-line application that accepts user input
