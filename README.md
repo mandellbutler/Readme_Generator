@@ -55,4 +55,6 @@ Github: https://github.com/mandellbutler
 
 Email: mandell.butler@outlook.com
 
-    <img src="assets/images/readme.png" width="400">
+<img src="assets/images/readme.png" width="400">
+
+<img src="assets/images/tutorial.gif" width="400">
