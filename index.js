@@ -54,7 +54,13 @@ const questions = [
         message: "Please provide your email address:",
       },
 ];
-
+const renderQuestions = (questions) => {
+    inquirer
+        .prompt(questions)
+        .then(answers => {
+            renderReadme(answers);
+        });
+};
 
 //prompt user for information to generate readme file
 
