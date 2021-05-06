@@ -20,6 +20,7 @@
     
     To install, simply clone the Github repository and add it to your local repo via your choice code-editing software (ie Visual Studio Code).
 
+<img src="assets/images/readme.png" width="400">
 
     
     ## USAGE
