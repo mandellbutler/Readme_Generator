@@ -62,6 +62,82 @@ const renderQuestions = (questions) => {
         });
 };
 
+const renderReadme = ({
+    title,
+    description,
+    installation,
+    usage,
+    contributing,
+    license,
+    tests,
+    username,
+    email,
+}) => {
+    const templateReadMe = `
+    ## ${title}
+    
+    ## Table of Contents
+    *Description
+    *Installation
+    *Usage
+    *Contributing
+    *License
+    *Tests
+
+    
+    ## DESCRIPTION
+    
+    ${description}
+
+
+    
+    ## INSTALLATION
+    
+    ${installation}
+
+
+    
+    ## USAGE
+    
+    ${usage}
+
+
+    
+    ## CONTRIBUTING
+    
+    ${contributing}
+
+
+    
+    ## LICENSE
+    
+    ${license}
+
+
+    
+    ## TESTS
+    
+    ${tests}
+
+    
+    
+    ## QUESTIONS
+
+    Please feel free to contact me, should you have any questions!
+
+    Github: ${"https://github.com/" + username}
+
+    Email: ${email}
+
+    `;
+    fs.writeFile("READ.me", templateReadMe, "utf8", (err) => 
+        err ? console.log(err) : console.log("And then, God created a READ.me!")
+    );
+};
+
+// init();
+renderQuestions(questions);
+
 //prompt user for information to generate readme file
 
 //===============
