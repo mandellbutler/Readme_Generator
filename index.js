@@ -54,6 +54,7 @@ const questions = [
     message: "Please provide your email address:",
   },
 ];
+
 const renderQuestions = (questions) => {
   inquirer
     .prompt(questions)

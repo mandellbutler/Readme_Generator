@@ -27,6 +27,7 @@ To install, simply clone the Github repository and add it to your local repo via
     
 Once you have the README.md generator cloned to your local repo and opened in your code editor, simply  type ‘node index’ from your integrated terminal. You will be presented with a series of prompts. Answer the questions, provide as much information as possible about your project. (Remember, the more information you provide about the purpose, functionality, and use of your application, the better the user experience!) When you have successfully answered all of the questions, your README.md will be instantly created, saving you tons of time and energy.
 
+Tutorial Link: https://drive.google.com/file/d/1GgI7ace5QDJkLJayA3Zt4CRronbDmcau/view
 
     
 ## CONTRIBUTING
@@ -58,4 +59,3 @@ Email: mandell.butler@outlook.com
 
 <img src="assets/images/readme.png" width="400">
 
-<img src="assets/images/tutorial.gif" width="400">
